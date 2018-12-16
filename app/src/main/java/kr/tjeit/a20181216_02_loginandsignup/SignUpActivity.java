@@ -71,6 +71,6 @@ public class SignUpActivity extends BaseActivity {
 
     @Override
     public void bindViews() {
-        allCheckbox =
+
     }
 }

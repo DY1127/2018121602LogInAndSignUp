@@ -64,17 +64,18 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="213dp" />
 
     <Button
         android:id="@+id/nextBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0F5E56"
+        android:layout_marginBottom="0dp"
+        android:background="#4B6EAF"
+        android:text="다음"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:text="다음"/>
+        android:textSize="18sp" />
 
 
 </LinearLayout>
