@@ -4,11 +4,15 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class LoginActivity extends BaseActivity {
 
     TextView signUpTxt;
+    Button LoginBtn;
+    EditText idEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +32,22 @@ public class LoginActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+    LoginBtn.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(mContext, MainActivity.class);
+            intent.putExtra(name:"입력아이디", inputid);
+            startActivity(intent);
+        }
+    });
+
     }
 
     @Override
     public void setValues() {
+
+
 
     }
 
